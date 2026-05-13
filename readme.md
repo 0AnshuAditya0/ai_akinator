@@ -1,65 +1,82 @@
-# IPL Selector Engine — Neural Identity Correlation
+# IPL AI Akinator — Neural Identity Correlation Engine
 
 Think of any IPL player (past or present). Our neural-linked AI engine will diagnose your player's identity using advanced strategy integrity checks and real-time probability vectors.
 
 ![UI Design](https://img.shields.io/badge/UI-Vibrant_Glassmorphism-purple)
-![AI](https://img.shields.io/badge/Engine-DeepSeek--R1-cyan)
-![Performance](https://img.shields.io/badge/UX-Zero_Latency-green)
+![AI Engine](https://img.shields.io/badge/Logic-Bayesian_Local_Scorer-cyan)
+![Performance](https://img.shields.io/badge/Latency-~50ms-green)
 
-## 🌌 The Experience
+---
 
-The IPL Selector Engine is a high-performance, immersive guessing game built with a **Vibrant Glassmorphism** aesthetic. Drawing inspiration from modern machine diagnostics and daylight stadium scoreboards, it provides a premium data-driven experience.
+## 🌌 Project Overview
 
-### 🚀 Key Features
+The **IPL AI Akinator** is a high-performance, visually immersive player-guessing game. It combines **Bayesian probability mathematics** with a **Vibrant Glassmorphism UI** to deliver a "Machine Diagnostic" experience. Unlike traditional LLM-based games, this project uses a hybrid logic engine to achieve near-instant response times.
 
-- **Bayesian Neural Core**: Uses high-gain information splitting to narrow down ~100 candidates in under 12 questions.
-- **Machine Diagnostics Sidebar**: Real-time tracking of state transitions (State 01, 02...) and **Target Prediction Metrics** showing the top 3 likely players at any moment.
-- **Vibrant Backdrop System**: Dynamic high-energy backgrounds (`vibrant2.png`) with deep glassmorphism blurs and frosted card interaction.
-- **Neural Loading & Sync**: A sophisticated loading overlay with a **30-second intelligent timer** that breaks the cycle as soon as data is synthesized.
-- **Multi-Model Fallback Chain**: Robust failover between DeepSeek-R1, OpenRouter Smart-Routing, and local mathematical scoring for 100% uptime.
+### 🎮 How It Works (The Workflow)
 
-## 🛠️ Tech Stack
+1.  **Initialization**: The system boots up a "Neural Pool" containing **260+ IPL players**. Every player starts with an equal probability (Uniform Distribution).
+2.  **Strategic Questioning**: The engine analyzes the pool and selects the question from its **Pre-computed Question Bank** that will split the candidate pool most effectively (Maximum Information Gain).
+3.  **Bayesian Update Loop**:
+    - As you answer (Yes/No/Maybe), the **Local Scorer** applies weights to every player in the database.
+    - Players matching your answer get a probability boost; those who don't are heavily penalized.
+    - The **Diagnostics Sidebar** updates in real-time, showing the **Top 5 Candidates** currently in the lead.
+4.  **Target Lock**: Once a player's probability exceeds **80%**, or after 12 questions, the system enters "Target Lock" and reveals the identity via the **Third Umpire Review** interface.
 
-- **Frontend**: Next.js 14 (App Router), Tailwind CSS, Framer Motion (AnimatePresence).
-- **Backend**: Next.js API Routes (Optimized Streaming & Token Limits).
-- **Data Layer**: Supabase (PostgreSQL) for session management and player telemetry.
-- **AI Layers**: DeepSeek-R1 (Primary), OpenRouter (Fallback Cluster).
+---
 
-## ⚡ Quick Start
+## 🛠️ Tech Stack & Tools
 
-### 1. Prerequisites
-- Node.js 18+
-- Supabase Project
-- API Keys for DeepSeek or OpenRouter
+### **Frontend (The Interface)**
+- **Next.js 14 (App Router)**: The backbone of the application, providing server-side rendering and efficient routing.
+- **Tailwind CSS**: Custom utility-first styling used to build the **Vibrant Stadium** aesthetic.
+- **Framer Motion**: Handles all complex animations, including the **Neural Loading Overlay**, glass card transitions, and the sticky HUD animations.
+- **Lucide React**: For the high-fidelity diagnostic icons.
 
-### 2. Environment Configuration
-Create a `.env.local` file:
-```bash
-OPENROUTER_API_KEY=your_key_here
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
-DEEPSEEK_API_KEY=your_deepseek_key_optional
-```
+### **Backend (The Brain)**
+- **Next.js API Routes**: Serverless functions that handle the scoring logic and database interactions.
+- **Supabase (PostgreSQL)**: Stores the extensive player dataset and manages real-time game sessions.
+- **Local Scoring Logic**: A custom implementation of Bayesian filtering that resides in `lib/question-bank.js`, eliminating the need for expensive LLM calls during standard turns.
 
-### 3. Initialize Neural Pool
-1. Execute `schema.sql` in your Supabase SQL Editor.
-2. Seed the player data stream:
-```bash
-node scripts/seed-database.js
-```
+### **Design Assets**
+- **Vibrant Backdrop**: `public/vibrant2.png` provides the high-energy, blurred stadium atmosphere.
+- **IPL Identity**: `public/ipl.jpeg` used for the sidebar branding and browser favicon.
 
-### 4. Deploy Diagnostic Server
-```bash
-npm run dev
-```
+---
 
-## 🧠 Neural Architecture
+## 🧠 Core Engineering Features
 
-### The Synchronized Loop
-1. **Booting**: The system initializes a uniform probability distribution across the player pool.
-2. **Analysis**: AI analyzes the search space and selects a high-gain delivery.
-3. **Synchronization**: User answers (Yes/No/Maybe) update the probability vectors.
-4. **Target Lock**: Once a candidate exceeds the **80% Confidence Threshold**, the system initiates the **"Third Umpire Review"** for the final guess reveal.
+### 1. Zero-Latency Engine
+By using a **Pre-computed Question Bank**, we've eliminated the typical 10-30 second wait time associated with LLMs. The game now responds in **~50ms**, with an intentional **800ms "Machine Thinking" delay** added solely for a premium user experience.
+
+### 2. Machine Diagnostics Sidebar
+A dedicated sidebar that functions as a "Live Debugger" for the game. It shows:
+- **State History**: Your previous answers and their impact on the logic.
+- **Prediction Metrics**: Live probability bars for the leading candidates.
+- **Strategy Integrity**: A floating HUD at the bottom tracking the synchronization level of the current guess.
+
+### 3. Intelligence Fallback
+While 90% of the game is handled by the local Bayesian engine, the system is designed to fall back to **DeepSeek-R1** or **OpenRouter** models if complex reasoning or unmapped questions are required.
+
+---
+
+## ⚡ Setup & Development
+
+1.  **Clone & Install**:
+    ```bash
+    npm install
+    ```
+2.  **Environment Setup**:
+    Add your Supabase and OpenRouter keys to `.env.local`.
+3.  **Seed the Neural Pool**:
+    ```bash
+    node scripts/seed-database.js
+    ```
+4.  **Launch**:
+    ```bash
+    npm run dev
+    ```
+
+---
 
 ## 📄 License
-MIT — High-Performance Strategic Entertainment.
+MIT — Engineered for high-speed cricket intelligence.
