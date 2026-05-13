@@ -1,10 +1,15 @@
 import { NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
 
-const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
-const MODEL = process.env.OPENROUTER_MODEL || 'deepseek/deepseek-r1:free';
+const FALLBACK_MODELS = [
+  "deepseek/deepseek-chat-v3-0324",
+  "openrouter/free",                        
+  "nvidia/nemotron-3-super-120b-a12b:free",  
+  "google/gemma-4-26b-a4b-it:free",         
+  "meta-llama/llama-3.2-3b-instruct:free"  
+];
 
-// In-memory rate limiter (resets on cold start, acceptable for free tier)
+// In-memory rate limiter
 const rateLimits = new Map();
 
 export async function POST(request) {
@@ -49,8 +54,8 @@ export async function POST(request) {
     // Parse candidate pool
     let candidates = session.candidate_pool || [];
     
-    // Filter: remove < 1% probability
-    candidates = candidates.filter(c => (c.probability || 0) >= 1);
+    // Filter: remove < 0.5% probability
+    candidates = candidates.filter(c => (c.probability || 0) >= 0.5);
     if (candidates.length < 2) {
       candidates = session.candidate_pool; // fallback
     }
@@ -61,24 +66,24 @@ export async function POST(request) {
     // Top 40 only for LLM
     const topCandidates = candidates.slice(0, 40);
     
-    // Call DeepSeek R1
+    // Call AI with Fallback Chain
     let result;
     let fallbackUsed = false;
     
     try {
-      result = await callDeepSeek(topCandidates, history, session.question_count);
+      result = await getAIResponse(topCandidates, history, session.question_count);
     } catch (error) {
-      console.error('[ERR] DeepSeek failed:', error);
+      console.error('[ERR] AI Final Failure:', error);
       
       // Log error
       await supabase.from('error_log').insert({
         session_id,
-        error_type: 'llm_failure',
+        error_type: 'all_apis_failed',
         error_message: error instanceof Error ? error.message : 'Unknown',
         fallback_used: true
       });
       
-      // Fallback to local scorer
+      // Ultimate fallback to local scorer
       result = localScorer(candidates, history);
       fallbackUsed = true;
     }
@@ -110,7 +115,7 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Failed to update session' }, { status: 500 });
     }
     
-    const isGuess = result.confidence >= 80 || session.question_count >= 7 || result.next_question.startsWith("GUESS:");
+    const isGuess = result.confidence >= 80 || session.question_count >= 11 || result.next_question.startsWith("GUESS:");
     let finalNextQ = result.next_question;
     let guessedPlayer = result.topPlayer;
 
@@ -134,8 +139,84 @@ export async function POST(request) {
   }
 }
 
-async function callDeepSeek(candidates, history, questionCount) {
-  const prompt = `You are an IPL Strategist AI. Think step-by-step.
+async function getAIResponse(candidates, history, questionCount) {
+  // 1. Try DeepSeek Direct (Primary if Key Exists)
+  if (process.env.DEEPSEEK_API_KEY) {
+    try {
+      console.log('[INF] Trying DeepSeek Direct...');
+      return await callDeepSeekDirect(candidates, history, questionCount);
+    } catch (e) {
+      console.log('[FLL] DeepSeek Direct failed:', e.message);
+    }
+  }
+
+  // 2. Try OpenRouter Fallback Chain
+  return await callOpenRouterWithFallback(candidates, history, questionCount);
+}
+
+async function callDeepSeekDirect(candidates, history, questionCount) {
+  const response = await fetch('https://api.deepseek.com/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      model: 'deepseek-reasoner',
+      messages: [{ role: 'system', content: buildPrompt(candidates, history, questionCount) }],
+      temperature: 0.2,
+      max_tokens: 2000
+    })
+  });
+
+  if (!response.ok) throw new Error(`DeepSeek Error: ${response.status}`);
+  const data = await response.json();
+  return extractJSON(data.choices[0].message.content);
+}
+
+async function callOpenRouterWithFallback(candidates, history, questionCount, attempt = 0) {
+  if (attempt >= FALLBACK_MODELS.length) {
+    throw new Error('All OpenRouter models failed');
+  }
+
+  const model = FALLBACK_MODELS[attempt];
+  console.log(`[INF] Trying OpenRouter model: ${model}`);
+
+  try {
+    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
+        'Content-Type': 'application/json',
+        'HTTP-Referer': 'https://ipl-selector.vercel.app',
+        'X-Title': 'IPL Selector'
+      },
+      body: JSON.stringify({
+        model,
+        messages: [{ role: 'system', content: buildPrompt(candidates, history, questionCount) }],
+        temperature: 0.2,
+        max_tokens: 2000
+      })
+    });
+
+    if (response.status === 429 || response.status === 404 || response.status === 503) {
+      console.log(`[FLL] ${model} failed (${response.status}), trying next...`);
+      return callOpenRouterWithFallback(candidates, history, questionCount, attempt + 1);
+    }
+
+    if (!response.ok) throw new Error(`OpenRouter Error: ${response.status}`);
+    
+    const data = await response.json();
+    return extractJSON(data.choices[0].message.content);
+
+  } catch (error) {
+    console.log(`[FLL] ${model} exception:`, error.message);
+    return callOpenRouterWithFallback(candidates, history, questionCount, attempt + 1);
+  }
+}
+
+function buildPrompt(candidates, history, questionCount) {
+  return `You are an IPL Strategist AI. Think step-by-step.
 
 CANDIDATES (${candidates.length} players):
 ${JSON.stringify(candidates.map(c => ({ name: c.name, probability: c.probability, role: c.role, nationality: c.nationality, is_overseas: c.is_overseas, teams: c.teams, era: c.era })), null, 2)}
@@ -161,52 +242,33 @@ OUTPUT STRICT JSON:
 }
 
 RULES:
-- If confidence >= 80 OR question_count >= 8: next_question = "GUESS: [topPlayer]"
+- If confidence >= 80 OR questionCount >= 11: next_question = "GUESS: [topPlayer]"
 - Never repeat questions from history
 - Never ask about confirmed attributes`;
+}
 
-  const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${OPENROUTER_KEY}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      model: MODEL,
-      messages: [{ role: 'system', content: prompt }],
-      temperature: 0.2,
-      max_tokens: 2000
-    })
-  });
+function extractJSON(text) {
+  // Remove reasoning blocks
+  let cleanText = text.replace(/<think>[\s\S]*?<\/think>/g, '');
+  cleanText = cleanText.replace(/<<think>>[\s\S]*?<\/think>/g, '');
   
-  if (!response.ok) {
-    throw new Error(`OpenRouter error: ${response.status}`);
-  }
+  // Try markdown code block
+  const mdMatch = cleanText.match(/```json\s*([\s\S]*?)\s*```/);
+  if (mdMatch) return JSON.parse(mdMatch[1]);
   
-  const data = await response.json();
-  const content = data.choices[0].message.content;
+  // Try raw JSON object
+  const rawMatch = cleanText.match(/\{[\s\S]*\}/);
+  if (rawMatch) return JSON.parse(rawMatch[0]);
   
-  // Extract JSON from markdown or raw text
-  const jsonMatch = content.match(/```json\s*([\s\S]*?)\s*```/) || 
-                    content.match(/\{[\s\S]*\}/);
-  
-  if (!jsonMatch) {
-    throw new Error('No JSON found in response');
-  }
-  
-  return JSON.parse(jsonMatch[1] || jsonMatch[0]);
+  throw new Error('No JSON found in response');
 }
 
 function localScorer(candidates, history) {
-  // Simple weighted scoring when LLM fails
   const scored = candidates.map(c => {
     let score = c.probability || 10;
-    
     history.forEach(h => {
       const q = h.question.toLowerCase();
       const a = h.answer;
-      
-      // Attribute matching logic
       if (q.includes('indian') && a === 'Yes' && c.nationality === 'Indian') score *= 2;
       if (q.includes('indian') && a === 'No' && c.nationality !== 'Indian') score *= 2;
       if (q.includes('overseas') && a === 'Yes' && c.is_overseas) score *= 2;
@@ -215,37 +277,22 @@ function localScorer(candidates, history) {
       if (q.includes('captain') && a === 'Yes' && c.has_captained) score *= 2;
       if (q.includes('wicketkeeper') && a === 'Yes' && c.role === 'Wicketkeeper') score *= 2;
       if (q.includes('finisher') && a === 'Yes' && c.is_finisher) score *= 2;
-      
-      // Penalize mismatches
       if (q.includes('indian') && a === 'Yes' && c.nationality !== 'Indian') score /= 3;
       if (q.includes('batsman') && a === 'Yes' && c.role !== 'Batsman') score /= 3;
     });
-    
     return { ...c, probability: Math.max(0.1, score) };
   });
-  
-  // Normalize
   const total = scored.reduce((sum, c) => sum + c.probability, 0);
   const normalized = scored.map(c => ({ ...c, probability: (c.probability / total * 100) }));
   normalized.sort((a, b) => b.probability - a.probability);
-  
-  // Pick next question from bank
   const questionBank = [
-    'Is your player Indian?',
-    'Is your player primarily a batsman?',
-    'Is your player a bowler?',
-    'Has your player captained an IPL team?',
-    'Is your player known for finishing matches?',
-    'Does your player bowl spin?',
-    'Is your player an overseas player?',
-    'Has your player won the IPL trophy?',
-    'Is your player a wicketkeeper?',
-    'Does your player bowl in the death overs?'
+    'Is your player Indian?', 'Is your player primarily a batsman?', 'Is your player a bowler?',
+    'Has your player captained an IPL team?', 'Is your player known for finishing matches?',
+    'Does your player bowl spin?', 'Is your player an overseas player?', 'Has your player won the IPL trophy?',
+    'Is your player a wicketkeeper?', 'Does your player bowl in the death overs?'
   ];
-  
   const usedQuestions = history.map(h => h.question);
   const availableQuestions = questionBank.filter(q => !usedQuestions.includes(q));
-  
   return {
     probabilities: normalized,
     next_question: availableQuestions[0] || 'Is your player from the modern era (2018+)?',
