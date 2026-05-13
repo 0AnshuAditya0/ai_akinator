@@ -1,0 +1,2998 @@
+[
+  {
+    "name": "Virat Kohli",
+    "nationality": "Indian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": false,
+    "teams": [
+      "RCB"
+    ],
+    "seasons": [
+      2008,
+      2024
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": true,
+    "purple_cap": false,
+    "matches": 240,
+    "runs": 7500,
+    "wickets": 4,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)"
+  },
+  {
+    "name": "MS Dhoni",
+    "nationality": "Indian",
+    "role": "Wicketkeeper",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": false,
+    "teams": [
+      "CSK",
+      "RPS"
+    ],
+    "seasons": [
+      2008,
+      2024
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 250,
+    "runs": 5000,
+    "wickets": 0,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Pioneer(08-12)"
+  },
+  {
+    "name": "Rohit Sharma",
+    "nationality": "Indian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": false,
+    "teams": [
+      "DC",
+      "MI"
+    ],
+    "seasons": [
+      2008,
+      2024
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 245,
+    "runs": 6200,
+    "wickets": 15,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)"
+  },
+  {
+    "name": "AB de Villiers",
+    "nationality": "South African",
+    "role": "Wicketkeeper",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "DD",
+      "RCB"
+    ],
+    "seasons": [
+      2008,
+      2021
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 184,
+    "runs": 5162,
+    "wickets": 0,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Growth(13-17)"
+  },
+  {
+    "name": "Chris Gayle",
+    "nationality": "West Indian",
+    "role": "Batsman",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "KKR",
+      "RCB",
+      "PBKS"
+    ],
+    "seasons": [
+      2009,
+      2021
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": true,
+    "purple_cap": false,
+    "matches": 142,
+    "runs": 4965,
+    "wickets": 18,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Growth(13-17)"
+  },
+  {
+    "name": "Lasith Malinga",
+    "nationality": "Sri Lankan",
+    "role": "Bowler",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "MI"
+    ],
+    "seasons": [
+      2009,
+      2019
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": true,
+    "matches": 122,
+    "runs": 88,
+    "wickets": 170,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Pioneer(08-12)"
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "nationality": "Indian",
+    "role": "Bowler",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": false,
+    "teams": [
+      "MI"
+    ],
+    "seasons": [
+      2013,
+      2024
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 125,
+    "runs": 65,
+    "wickets": 150,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)"
+  },
+  {
+    "name": "Rashid Khan",
+    "nationality": "Afghan",
+    "role": "Bowler",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "SRH",
+      "GT"
+    ],
+    "seasons": [
+      2017,
+      2024
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 110,
+    "runs": 450,
+    "wickets": 140,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)"
+  },
+  {
+    "name": "Sunil Narine",
+    "nationality": "West Indian",
+    "role": "All-rounder",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "KKR"
+    ],
+    "seasons": [
+      2012,
+      2024
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 165,
+    "runs": 1100,
+    "wickets": 165,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Growth(13-17)"
+  },
+  {
+    "name": "Kieron Pollard",
+    "nationality": "West Indian",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast-medium",
+    "is_overseas": true,
+    "teams": [
+      "MI"
+    ],
+    "seasons": [
+      2010,
+      2022
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 189,
+    "runs": 3412,
+    "wickets": 69,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Growth(13-17)"
+  },
+  {
+    "name": "Player 11",
+    "nationality": "Indian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": false,
+    "teams": [
+      "Team 0"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 50,
+    "runs": 0,
+    "wickets": 0,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": "tricky-0"
+  },
+  {
+    "name": "Player 12",
+    "nationality": "Australian",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 1"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 51,
+    "runs": 50,
+    "wickets": 2,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 13",
+    "nationality": "English",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 2"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 52,
+    "runs": 100,
+    "wickets": 4,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 14",
+    "nationality": "South African",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 3"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 53,
+    "runs": 150,
+    "wickets": 6,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 15",
+    "nationality": "New Zealander",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 4"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 54,
+    "runs": 200,
+    "wickets": 8,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 16",
+    "nationality": "Indian",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": false,
+    "teams": [
+      "Team 5"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 55,
+    "runs": 250,
+    "wickets": 10,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 17",
+    "nationality": "Australian",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 6"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 56,
+    "runs": 300,
+    "wickets": 12,
+    "is_finisher": true,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 18",
+    "nationality": "English",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 7"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 57,
+    "runs": 350,
+    "wickets": 14,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 19",
+    "nationality": "South African",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 8"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 58,
+    "runs": 400,
+    "wickets": 16,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 20",
+    "nationality": "New Zealander",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 9"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 59,
+    "runs": 450,
+    "wickets": 18,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 21",
+    "nationality": "Indian",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": false,
+    "teams": [
+      "Team 0"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": true,
+    "purple_cap": false,
+    "matches": 60,
+    "runs": 500,
+    "wickets": 20,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": "tricky-10"
+  },
+  {
+    "name": "Player 22",
+    "nationality": "Australian",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 1"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": true,
+    "matches": 61,
+    "runs": 550,
+    "wickets": 22,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 23",
+    "nationality": "English",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 2"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 62,
+    "runs": 600,
+    "wickets": 24,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 24",
+    "nationality": "South African",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 3"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 63,
+    "runs": 650,
+    "wickets": 26,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 25",
+    "nationality": "New Zealander",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 4"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 64,
+    "runs": 700,
+    "wickets": 28,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 26",
+    "nationality": "Indian",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": false,
+    "teams": [
+      "Team 5"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 65,
+    "runs": 750,
+    "wickets": 30,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 27",
+    "nationality": "Australian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 6"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 66,
+    "runs": 800,
+    "wickets": 32,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 28",
+    "nationality": "English",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 7"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 67,
+    "runs": 850,
+    "wickets": 34,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 29",
+    "nationality": "South African",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 8"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 68,
+    "runs": 900,
+    "wickets": 36,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 30",
+    "nationality": "New Zealander",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 9"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 69,
+    "runs": 950,
+    "wickets": 38,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 31",
+    "nationality": "Indian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": false,
+    "teams": [
+      "Team 0"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 70,
+    "runs": 1000,
+    "wickets": 40,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": "tricky-20"
+  },
+  {
+    "name": "Player 32",
+    "nationality": "Australian",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 1"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 71,
+    "runs": 1050,
+    "wickets": 42,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": true,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 33",
+    "nationality": "English",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 2"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 72,
+    "runs": 1100,
+    "wickets": 44,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 34",
+    "nationality": "South African",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 3"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 73,
+    "runs": 1150,
+    "wickets": 46,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 35",
+    "nationality": "New Zealander",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 4"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 74,
+    "runs": 1200,
+    "wickets": 48,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 36",
+    "nationality": "Indian",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": false,
+    "teams": [
+      "Team 5"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 75,
+    "runs": 1250,
+    "wickets": 50,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 37",
+    "nationality": "Australian",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 6"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 76,
+    "runs": 1300,
+    "wickets": 52,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 38",
+    "nationality": "English",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 7"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 77,
+    "runs": 1350,
+    "wickets": 54,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 39",
+    "nationality": "South African",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 8"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 78,
+    "runs": 1400,
+    "wickets": 56,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 40",
+    "nationality": "New Zealander",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 9"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 79,
+    "runs": 1450,
+    "wickets": 58,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 41",
+    "nationality": "Indian",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": false,
+    "teams": [
+      "Team 0"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 80,
+    "runs": 1500,
+    "wickets": 60,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": "tricky-30"
+  },
+  {
+    "name": "Player 42",
+    "nationality": "Australian",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 1"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 81,
+    "runs": 1550,
+    "wickets": 62,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 43",
+    "nationality": "English",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 2"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 82,
+    "runs": 1600,
+    "wickets": 64,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 44",
+    "nationality": "South African",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 3"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 83,
+    "runs": 1650,
+    "wickets": 66,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 45",
+    "nationality": "New Zealander",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 4"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 84,
+    "runs": 1700,
+    "wickets": 68,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 46",
+    "nationality": "Indian",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": false,
+    "teams": [
+      "Team 5"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 85,
+    "runs": 1750,
+    "wickets": 70,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 47",
+    "nationality": "Australian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 6"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 86,
+    "runs": 1800,
+    "wickets": 72,
+    "is_finisher": true,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 48",
+    "nationality": "English",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 7"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 87,
+    "runs": 1850,
+    "wickets": 74,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 49",
+    "nationality": "South African",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 8"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 88,
+    "runs": 1900,
+    "wickets": 76,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 50",
+    "nationality": "New Zealander",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 9"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 89,
+    "runs": 1950,
+    "wickets": 78,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 51",
+    "nationality": "Indian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": false,
+    "teams": [
+      "Team 0"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 90,
+    "runs": 2000,
+    "wickets": 80,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": "tricky-40"
+  },
+  {
+    "name": "Player 52",
+    "nationality": "Australian",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 1"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 91,
+    "runs": 2050,
+    "wickets": 82,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 53",
+    "nationality": "English",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 2"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 92,
+    "runs": 2100,
+    "wickets": 84,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 54",
+    "nationality": "South African",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 3"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 93,
+    "runs": 2150,
+    "wickets": 86,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 55",
+    "nationality": "New Zealander",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 4"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 94,
+    "runs": 2200,
+    "wickets": 88,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 56",
+    "nationality": "Indian",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": false,
+    "teams": [
+      "Team 5"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 95,
+    "runs": 2250,
+    "wickets": 90,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 57",
+    "nationality": "Australian",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 6"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 96,
+    "runs": 2300,
+    "wickets": 92,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 58",
+    "nationality": "English",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 7"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 97,
+    "runs": 2350,
+    "wickets": 94,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 59",
+    "nationality": "South African",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 8"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 98,
+    "runs": 2400,
+    "wickets": 96,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 60",
+    "nationality": "New Zealander",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 9"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 99,
+    "runs": 2450,
+    "wickets": 98,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 61",
+    "nationality": "Indian",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": false,
+    "teams": [
+      "Team 0"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 100,
+    "runs": 2500,
+    "wickets": 100,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": "tricky-50"
+  },
+  {
+    "name": "Player 62",
+    "nationality": "Australian",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 1"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 101,
+    "runs": 2550,
+    "wickets": 102,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 63",
+    "nationality": "English",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 2"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 102,
+    "runs": 2600,
+    "wickets": 104,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 64",
+    "nationality": "South African",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 3"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 103,
+    "runs": 2650,
+    "wickets": 106,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 65",
+    "nationality": "New Zealander",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 4"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 104,
+    "runs": 2700,
+    "wickets": 108,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 66",
+    "nationality": "Indian",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": false,
+    "teams": [
+      "Team 5"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 105,
+    "runs": 2750,
+    "wickets": 110,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 67",
+    "nationality": "Australian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 6"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 106,
+    "runs": 2800,
+    "wickets": 112,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": true,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 68",
+    "nationality": "English",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 7"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 107,
+    "runs": 2850,
+    "wickets": 114,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 69",
+    "nationality": "South African",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 8"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 108,
+    "runs": 2900,
+    "wickets": 116,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 70",
+    "nationality": "New Zealander",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 9"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 109,
+    "runs": 2950,
+    "wickets": 118,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 71",
+    "nationality": "Indian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": false,
+    "teams": [
+      "Team 0"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 110,
+    "runs": 3000,
+    "wickets": 120,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": "tricky-60"
+  },
+  {
+    "name": "Player 72",
+    "nationality": "Australian",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 1"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 111,
+    "runs": 3050,
+    "wickets": 122,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 73",
+    "nationality": "English",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 2"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 112,
+    "runs": 3100,
+    "wickets": 124,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 74",
+    "nationality": "South African",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 3"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 113,
+    "runs": 3150,
+    "wickets": 126,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 75",
+    "nationality": "New Zealander",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 4"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 114,
+    "runs": 3200,
+    "wickets": 128,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 76",
+    "nationality": "Indian",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": false,
+    "teams": [
+      "Team 5"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 115,
+    "runs": 3250,
+    "wickets": 130,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 77",
+    "nationality": "Australian",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 6"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 116,
+    "runs": 3300,
+    "wickets": 132,
+    "is_finisher": true,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 78",
+    "nationality": "English",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 7"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 117,
+    "runs": 3350,
+    "wickets": 134,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 79",
+    "nationality": "South African",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 8"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 118,
+    "runs": 3400,
+    "wickets": 136,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 80",
+    "nationality": "New Zealander",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 9"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 119,
+    "runs": 3450,
+    "wickets": 138,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 81",
+    "nationality": "Indian",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": false,
+    "teams": [
+      "Team 0"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 120,
+    "runs": 3500,
+    "wickets": 140,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": "tricky-70"
+  },
+  {
+    "name": "Player 82",
+    "nationality": "Australian",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 1"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 121,
+    "runs": 3550,
+    "wickets": 142,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 83",
+    "nationality": "English",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 2"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 122,
+    "runs": 3600,
+    "wickets": 144,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 84",
+    "nationality": "South African",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 3"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 123,
+    "runs": 3650,
+    "wickets": 146,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 85",
+    "nationality": "New Zealander",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 4"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 124,
+    "runs": 3700,
+    "wickets": 148,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 86",
+    "nationality": "Indian",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": false,
+    "teams": [
+      "Team 5"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 125,
+    "runs": 3750,
+    "wickets": 150,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 87",
+    "nationality": "Australian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 6"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 126,
+    "runs": 3800,
+    "wickets": 152,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 88",
+    "nationality": "English",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 7"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 127,
+    "runs": 3850,
+    "wickets": 154,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 89",
+    "nationality": "South African",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 8"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 128,
+    "runs": 3900,
+    "wickets": 156,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 90",
+    "nationality": "New Zealander",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 9"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 129,
+    "runs": 3950,
+    "wickets": 158,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 91",
+    "nationality": "Indian",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": false,
+    "teams": [
+      "Team 0"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": true,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 130,
+    "runs": 4000,
+    "wickets": 160,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": "tricky-80"
+  },
+  {
+    "name": "Player 92",
+    "nationality": "Australian",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 1"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 131,
+    "runs": 4050,
+    "wickets": 162,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 93",
+    "nationality": "English",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 2"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 132,
+    "runs": 4100,
+    "wickets": 164,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 94",
+    "nationality": "South African",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 3"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 133,
+    "runs": 4150,
+    "wickets": 166,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 95",
+    "nationality": "New Zealander",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 4"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 134,
+    "runs": 4200,
+    "wickets": 168,
+    "is_finisher": true,
+    "is_opener": false,
+    "is_death_bowler": true,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 96",
+    "nationality": "Indian",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": false,
+    "teams": [
+      "Team 5"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": true,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 135,
+    "runs": 4250,
+    "wickets": 170,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 97",
+    "nationality": "Australian",
+    "role": "All-rounder",
+    "batting_style": "Right-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 6"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 136,
+    "runs": 4300,
+    "wickets": 172,
+    "is_finisher": false,
+    "is_opener": true,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 98",
+    "nationality": "English",
+    "role": "Wicketkeeper",
+    "batting_style": "Left-hand",
+    "bowling_style": "Right-arm spin",
+    "is_overseas": true,
+    "teams": [
+      "Team 7"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 137,
+    "runs": 4350,
+    "wickets": 174,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": true,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 99",
+    "nationality": "South African",
+    "role": "Batsman",
+    "batting_style": "Right-hand",
+    "bowling_style": "Right-arm fast",
+    "is_overseas": true,
+    "teams": [
+      "Team 8"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": true,
+    "has_captained": false,
+    "won_trophy": true,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 138,
+    "runs": 4400,
+    "wickets": 176,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": true,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  },
+  {
+    "name": "Player 100",
+    "nationality": "New Zealander",
+    "role": "Bowler",
+    "batting_style": "Left-hand",
+    "bowling_style": "None",
+    "is_overseas": true,
+    "teams": [
+      "Team 9"
+    ],
+    "seasons": [
+      2015,
+      2020
+    ],
+    "is_active_2024": false,
+    "has_captained": false,
+    "won_trophy": false,
+    "orange_cap": false,
+    "purple_cap": false,
+    "matches": 139,
+    "runs": 4450,
+    "wickets": 178,
+    "is_finisher": false,
+    "is_opener": false,
+    "is_death_bowler": false,
+    "is_spin_bowler": false,
+    "is_fast_bowler": false,
+    "era": "Modern(18-24)",
+    "tricky_pair_tag": null
+  }
+]
