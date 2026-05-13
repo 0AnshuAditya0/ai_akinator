@@ -1,4 +1,4 @@
-# IPL Selector — AI-Powered Player Guessing Engine
+# AI Akanitor — AI-Powered Player Guessing Engine
 
 Think of any IPL player (past or present). Our Bayesian AI engine will guess who it is within 12 questions. 
 
@@ -6,7 +6,7 @@ Think of any IPL player (past or present). Our Bayesian AI engine will guess who
 ![AI](https://img.shields.io/badge/AI-DeepSeek--R1-orange)
 ![Framework](https://img.shields.io/badge/Framework-Next.js--14-black)
 
-## 🚀 Features
+## Features
 
 - **Bayesian Reasoning Engine**: Uses advanced probability distribution to narrow down candidates.
 * **Multi-LLM Fallback Chain**: Robust API handling with automatic failover between DeepSeek R1, Llama 3.3, Qwen 2.5, and Gemma.
@@ -14,14 +14,14 @@ Think of any IPL player (past or present). Our Bayesian AI engine will guess who
 - **Real-time Stats**: Powered by Supabase with live player data merging from Kaggle datasets.
 - **Smart Question Selection**: Maximizes information gain per question to ensure a guess within 12 steps.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: Next.js 14 (App Router), Tailwind CSS, Framer Motion.
 - **Backend**: Next.js API Routes (Serverless).
 - **Database**: Supabase (PostgreSQL).
 - **AI Models**: DeepSeek R1 (via OpenRouter/Direct), Meta Llama 3.3 70B, Qwen 2.5.
 
-## 🏁 Quick Start
+## Quick Start
 
 ### 1. Prerequisites
 - Node.js 18+
@@ -49,7 +49,7 @@ node scripts/seed-database.js
 npm run dev
 ```
 
-## 🧠 Technical Architecture
+## Technical Architecture
 
 ### The Probability Loop
 1. **Start**: Uniform probability is assigned to all ~100+ players.
@@ -61,5 +61,5 @@ npm run dev
 ### Reliability Layer
 The system uses a "Multi-Model Fallback Chain". If the primary AI model (DeepSeek R1) is rate-limited or unavailable, the system automatically tries Llama 3.3, then Qwen, and finally falls back to a local mathematical scorer.
 
-## 📄 License
+## License
 MIT

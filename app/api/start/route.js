@@ -36,6 +36,7 @@ export async function POST(req) {
       type: 'question',
       question_count: 0,
       confidence: 100 / players.length,
+      pool_size: players.length,
       top_candidates: candidatePool.slice(0, 5).map(c => ({ name: c.name, probability: c.probability }))
     });
   } catch (err) {

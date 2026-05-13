@@ -65,6 +65,9 @@ export async function POST(request) {
     // Top 40 only for LLM
     const topCandidates = candidates.slice(0, 40);
     
+    let result;
+    let fallbackUsed = false;
+    
     try {
       result = await getAIResponse(topCandidates, history, session.question_count);
     } catch (error) {
@@ -118,8 +121,10 @@ export async function POST(request) {
       type: isGuess ? 'guess' : 'question',
       question: isGuess ? null : finalNextQ,
       guessed_player: isGuess ? guessedPlayer : null,
+      guessed_player_data: isGuess ? newPool[0] : null,
       confidence: result.confidence,
       top_candidates: newPool.slice(0, 5).map(c => ({ name: c.name, probability: c.probability })),
+      pool_size: newPool.length,
       question_count: session.question_count + 1,
       session_id,
       fallback_used: fallbackUsed
@@ -150,10 +155,10 @@ async function callDeepSeekDirect(candidates, history, questionCount) {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      model: 'deepseek-reasoner',
+      model: 'deepseek-chat',
       messages: [{ role: 'system', content: buildPrompt(candidates, history, questionCount) }],
-      temperature: 0.2,
-      max_tokens: 2000
+      temperature: 0.1,
+      max_tokens: 600
     })
   });
 
@@ -181,8 +186,8 @@ async function callOpenRouterWithFallback(candidates, history, questionCount, at
       body: JSON.stringify({
         model,
         messages: [{ role: 'system', content: buildPrompt(candidates, history, questionCount) }],
-        temperature: 0.2,
-        max_tokens: 2000
+        temperature: 0.1,
+        max_tokens: 600
       })
     });
 
