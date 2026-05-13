@@ -8,13 +8,12 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
-// Load CSV
 let kaggleData = [];
 try {
   const csvFile = fs.readFileSync('cricket_data_2026.csv', 'utf8');
   kaggleData = parse(csvFile, { columns: true, skip_empty_lines: true });
 } catch (e) {
-  console.log('CSV file not found or could not be parsed. Proceeding without CSV data.');
+  // Silent fail
 }
 
 // COMPREHENSIVE PLAYER METADATA (Pre-built, no guessing)
@@ -175,23 +174,17 @@ function mergeStats(playerName, meta) {
 }
 
 async function seedDatabase() {
-  console.log('[INIT] Starting database seed...');
-  
   const { count, error: countError } = await supabase
     .from('players')
     .select('*', { count: 'exact', head: true });
   
   if (countError) {
-    console.error('[ERR] Failed to check player count:', countError);
     process.exit(1);
   }
   
   if (count && count > 0) {
-    console.log(`[INIT] Database already seeded with ${count} players. Skipping.`);
     process.exit(0);
   }
-  
-  console.log(`[INIT] Seeding ${Object.keys(PLAYER_META).length} players...`);
   
   const players = Object.entries(PLAYER_META).map(([name, meta]) => {
     const merged = mergeStats(name, meta);
@@ -239,16 +232,8 @@ async function seedDatabase() {
   const BATCH_SIZE = 25;
   for (let i = 0; i < players.length; i += BATCH_SIZE) {
     const batch = players.slice(i, i + BATCH_SIZE);
-    const { error } = await supabase.from('players').insert(batch);
-    
-    if (error) {
-      console.error(`[ERR] Batch ${i / BATCH_SIZE + 1} failed:`, error);
-    } else {
-      console.log(`[INIT] Inserted batch ${i / BATCH_SIZE + 1}/${Math.ceil(players.length / BATCH_SIZE)}`);
-    }
+    await supabase.from('players').insert(batch);
   }
-  
-  console.log('[INIT] Database seed complete!');
 }
 
 seedDatabase().catch(console.error);

@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# IPL Selector — AI-Powered Player Guessing Engine
 
-## Getting Started
+Think of any IPL player (past or present). Our Bayesian AI engine will guess who it is within 12 questions. 
 
-First, run the development server:
+![Aesthetics](https://img.shields.io/badge/Aesthetics-Premium-blue)
+![AI](https://img.shields.io/badge/AI-DeepSeek--R1-orange)
+![Framework](https://img.shields.io/badge/Framework-Next.js--14-black)
 
+## 🚀 Features
+
+- **Bayesian Reasoning Engine**: Uses advanced probability distribution to narrow down candidates.
+* **Multi-LLM Fallback Chain**: Robust API handling with automatic failover between DeepSeek R1, Llama 3.3, Qwen 2.5, and Gemma.
+- **Terminal Minimalist UI**: A premium, dark-mode terminal aesthetic with CRT effects and smooth micro-animations.
+- **Real-time Stats**: Powered by Supabase with live player data merging from Kaggle datasets.
+- **Smart Question Selection**: Maximizes information gain per question to ensure a guess within 12 steps.
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 14 (App Router), Tailwind CSS, Framer Motion.
+- **Backend**: Next.js API Routes (Serverless).
+- **Database**: Supabase (PostgreSQL).
+- **AI Models**: DeepSeek R1 (via OpenRouter/Direct), Meta Llama 3.3 70B, Qwen 2.5.
+
+## 🏁 Quick Start
+
+### 1. Prerequisites
+- Node.js 18+
+- Supabase Account
+- OpenRouter API Key (or DeepSeek API Key)
+
+### 2. Environment Setup
+Create a `.env.local` file in the root:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+OPENROUTER_API_KEY=your_key_here
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+DEEPSEEK_API_KEY=your_deepseek_key_optional
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Database Initialization
+1. Run the `schema.sql` script in your Supabase SQL Editor.
+2. Seed the database with player statistics:
+```bash
+node scripts/seed-database.js
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 4. Run Development Server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🧠 Technical Architecture
 
-## Learn More
+### The Probability Loop
+1. **Start**: Uniform probability is assigned to all ~100+ players.
+2. **Question**: AI selects a question that splits the candidate pool effectively.
+3. **Answer**: User provides 'Yes', 'No', 'Maybe', or 'Unknown'.
+4. **Update**: Probabilities are updated using a Bayesian update rule. 
+5. **Guess**: When a player exceeds 80% confidence, the AI makes its move.
 
-To learn more about Next.js, take a look at the following resources:
+### Reliability Layer
+The system uses a "Multi-Model Fallback Chain". If the primary AI model (DeepSeek R1) is rate-limited or unavailable, the system automatically tries Llama 3.3, then Qwen, and finally falls back to a local mathematical scorer.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📄 License
+MIT

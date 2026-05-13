@@ -6,7 +6,6 @@ import { pickBestQuestion } from '@/lib/questions';
 
 export async function POST(req) {
   try {
-    // Ensure DB is seeded
     await initDb();
 
     // Fetch all players
@@ -20,8 +19,6 @@ export async function POST(req) {
 
     const firstQuestion = pickBestQuestion(candidatePool, []);
     const sessionId = uuidv4();
-
-    // Create session
     const { error: sessionError } = await supabase.from('sessions').insert({
       id: sessionId,
       candidate_pool: candidatePool,

@@ -9,7 +9,6 @@ const FALLBACK_MODELS = [
   "meta-llama/llama-3.2-3b-instruct:free"  
 ];
 
-// In-memory rate limiter
 const rateLimits = new Map();
 
 export async function POST(request) {
@@ -66,16 +65,9 @@ export async function POST(request) {
     // Top 40 only for LLM
     const topCandidates = candidates.slice(0, 40);
     
-    // Call AI with Fallback Chain
-    let result;
-    let fallbackUsed = false;
-    
     try {
       result = await getAIResponse(topCandidates, history, session.question_count);
     } catch (error) {
-      console.error('[ERR] AI Final Failure:', error);
-      
-      // Log error
       await supabase.from('error_log').insert({
         session_id,
         error_type: 'all_apis_failed',
@@ -83,7 +75,6 @@ export async function POST(request) {
         fallback_used: true
       });
       
-      // Ultimate fallback to local scorer
       result = localScorer(candidates, history);
       fallbackUsed = true;
     }
@@ -140,17 +131,14 @@ export async function POST(request) {
 }
 
 async function getAIResponse(candidates, history, questionCount) {
-  // 1. Try DeepSeek Direct (Primary if Key Exists)
   if (process.env.DEEPSEEK_API_KEY) {
     try {
-      console.log('[INF] Trying DeepSeek Direct...');
       return await callDeepSeekDirect(candidates, history, questionCount);
     } catch (e) {
-      console.log('[FLL] DeepSeek Direct failed:', e.message);
+      // Fallback
     }
   }
 
-  // 2. Try OpenRouter Fallback Chain
   return await callOpenRouterWithFallback(candidates, history, questionCount);
 }
 
@@ -180,7 +168,6 @@ async function callOpenRouterWithFallback(candidates, history, questionCount, at
   }
 
   const model = FALLBACK_MODELS[attempt];
-  console.log(`[INF] Trying OpenRouter model: ${model}`);
 
   try {
     const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -200,7 +187,6 @@ async function callOpenRouterWithFallback(candidates, history, questionCount, at
     });
 
     if (response.status === 429 || response.status === 404 || response.status === 503) {
-      console.log(`[FLL] ${model} failed (${response.status}), trying next...`);
       return callOpenRouterWithFallback(candidates, history, questionCount, attempt + 1);
     }
 
@@ -210,7 +196,6 @@ async function callOpenRouterWithFallback(candidates, history, questionCount, at
     return extractJSON(data.choices[0].message.content);
 
   } catch (error) {
-    console.log(`[FLL] ${model} exception:`, error.message);
     return callOpenRouterWithFallback(candidates, history, questionCount, attempt + 1);
   }
 }
