@@ -16,7 +16,7 @@ export const metadata = {
   title: "IPL Selector | AI Guessing Engine",
   description: "Advanced AI-driven IPL player guessing game",
   icons: {
-    icon: "/ipl.png",
+    icon: "/ipl.jpeg",
   },
 };
 

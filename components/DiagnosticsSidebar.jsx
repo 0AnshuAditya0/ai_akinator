@@ -7,9 +7,9 @@ export default function DiagnosticsSidebar({ history, poolSize, topCandidates })
       <div className="mb-12 flex justify-start">
         <div className="relative group">
           <img 
-            src="/ipl.png" 
+            src="/ipl.jpeg" 
             alt="IPL Logo" 
-            className="h-14 w-auto object-contain brightness-110 contrast-125" 
+            className="h-14 w-auto object-contain brightness-110 contrast-125 rounded-md shadow-lg" 
             style={{ mixBlendMode: 'screen' }} // Helps blend if the logo has a dark background or slight white edges
           />
         </div>

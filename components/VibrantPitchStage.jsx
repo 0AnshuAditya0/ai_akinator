@@ -1,13 +1,75 @@
 'use client';
-import { motion } from 'framer-motion';
-import { Check, X, HelpCircle, Info } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Check, X, HelpCircle, Info, Loader2 } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 export default function VibrantPitchStage({ question, questionCount, onAnswer, isThinking }) {
   const syncProgress = Math.min(100, (questionCount / 20) * 100 + 15);
+  const [timer, setTimer] = useState(30);
+
+  // Handle the 30s countdown during loading
+  useEffect(() => {
+    let interval;
+    if (isThinking) {
+      setTimer(30);
+      interval = setInterval(() => {
+        setTimer((prev) => (prev > 0 ? prev - 1 : 0));
+      }, 1000);
+    } else {
+      setTimer(30);
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  }, [isThinking]);
 
   return (
     <div className="flex-1 h-full relative overflow-hidden flex flex-col items-center justify-center p-6 lg:p-12 pb-32">
-      {/* Background Image - Switch to vibrant2.png */}
+      {/* Loading Overlay with 30s Timer */}
+      <AnimatePresence>
+        {isThinking && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="absolute inset-0 z-50 bg-black/70 backdrop-blur-xl flex flex-col items-center justify-center space-y-8"
+          >
+            <div className="relative">
+                <motion.div 
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
+                  className="w-24 h-24 rounded-full border-2 border-t-[#00FFFF] border-white/5"
+                />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-mono text-[#00FFFF] font-bold">
+                  {timer}s
+                </div>
+            </div>
+            
+            <div className="text-center space-y-3">
+                <div className="flex items-center justify-center space-x-3">
+                   <Loader2 className="w-4 h-4 text-[#00FFFF] animate-spin" />
+                   <div className="text-[#00FFFF] font-mono text-xs tracking-[0.6em] uppercase font-bold animate-pulse">
+                     Synthesizing Neural Path
+                   </div>
+                </div>
+                <div className="text-white/30 font-mono text-[9px] uppercase tracking-[0.2em] max-w-xs leading-relaxed">
+                  The engine is cross-referencing {91 - questionCount} candidates. <br/>
+                  Estimated completion: {timer > 15 ? 'OPTIONAL' : 'IMMINENT'}
+                </div>
+            </div>
+
+            {/* Micro-progress bar for the timer */}
+            <div className="w-48 h-1 bg-white/5 rounded-full overflow-hidden">
+                <motion.div 
+                  initial={{ width: "100%" }}
+                  animate={{ width: `${(timer / 30) * 100}%` }}
+                  className="h-full bg-[#00FFFF]/40"
+                />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-1000 scale-105"
         style={{ backgroundImage: `url('/vibrant2.png')` }}
@@ -37,7 +99,7 @@ export default function VibrantPitchStage({ question, questionCount, onAnswer, i
           {question.replace(/\*\*/g, '')}
         </motion.h1>
 
-        {/* Glassmorphism Buttons - Added margin bottom to avoid HUD overlap */}
+        {/* Glassmorphism Buttons */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl mb-24">
           <GlassButton 
             label="YES" 
@@ -102,13 +164,6 @@ export default function VibrantPitchStage({ question, questionCount, onAnswer, i
           </div>
         </motion.div>
       </div>
-      
-      {/* Decorative corner star - repositioned to not overlap HUD */}
-      <div className="absolute bottom-32 right-10 z-20 opacity-10 pointer-events-none">
-        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1">
-          <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="white" />
-        </svg>
-      </div>
     </div>
   );
 }
@@ -116,11 +171,11 @@ export default function VibrantPitchStage({ question, questionCount, onAnswer, i
 function GlassButton({ label, icon, iconColor, onClick, disabled }) {
   return (
     <motion.button
-      whileHover={{ scale: 1.02, backgroundColor: 'rgba(255, 255, 255, 0.12)' }}
+      whileHover={{ scale: 1.02, backgroundColor: 'rgba(255, 255, 255, 0.15)' }}
       whileTap={{ scale: 0.98 }}
       onClick={onClick}
       disabled={disabled}
-      className="relative flex flex-col items-center justify-center space-y-4 h-40 bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-3xl transition-all shadow-2xl group disabled:opacity-50 disabled:cursor-not-allowed"
+      className="relative flex flex-col items-center justify-center space-y-4 h-40 bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-3xl transition-all shadow-xl group disabled:opacity-50 disabled:cursor-not-allowed"
     >
       <div className={`w-12 h-12 rounded-full flex items-center justify-center border border-white/20 transition-transform group-hover:scale-110 ${iconColor || 'bg-white/5'}`}>
         {icon}
