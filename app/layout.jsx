@@ -9,6 +9,9 @@ export const metadata = {
     description: 'Think of any IPL player. Our Bayesian AI will guess who it is within 12 questions.',
     type: 'website',
   },
+  icons: {
+    icon: '/ipl.jpeg',
+  },
 };
 
 export const viewport = {
