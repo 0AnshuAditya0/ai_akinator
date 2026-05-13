@@ -27,7 +27,8 @@ export async function POST(req) {
       candidate_pool: candidatePool,
       history: [],
       question_count: 0,
-      status: 'active'
+      status: 'active',
+      last_question: firstQuestion
     });
 
     if (sessionError) throw sessionError;

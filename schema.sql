@@ -47,6 +47,7 @@ CREATE TABLE sessions (
     question_count INT DEFAULT 0,
     status TEXT DEFAULT 'active',
     last_guessed_player TEXT,
+    last_question TEXT,
     created_at TIMESTAMP DEFAULT NOW(),
     updated_at TIMESTAMP DEFAULT NOW()
 );

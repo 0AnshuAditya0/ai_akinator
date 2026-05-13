@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+cricket_data_2026.csv
+ipl-2025-player-lifetime-statistics.zip
