@@ -103,14 +103,35 @@ export default function Game() {
     setIsLoading(false);
   };
 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
     <div className="flex flex-col lg:flex-row h-screen w-full bg-[#050B18] text-white font-sans overflow-hidden">
+      {/* Mobile Menu Button */}
+      <button 
+        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        className="lg:hidden fixed top-4 left-4 z-[100] p-2 bg-white/10 backdrop-blur-md rounded-lg border border-white/10"
+      >
+        <div className="w-6 h-0.5 bg-white mb-1"></div>
+        <div className="w-6 h-0.5 bg-white mb-1"></div>
+        <div className="w-6 h-0.5 bg-white"></div>
+      </button>
+
       {/* Sidebar - Machine Diagnostics */}
-      <DiagnosticsSidebar 
-        history={history} 
-        poolSize={poolSize} 
-        topCandidates={topCandidates}
-      />
+      <div className={`
+        fixed inset-0 z-50 lg:relative lg:block
+        ${isSidebarOpen ? 'block' : 'hidden'}
+      `}>
+        <div 
+          className="absolute inset-0 bg-black/60 backdrop-blur-sm lg:hidden"
+          onClick={() => setIsSidebarOpen(false)}
+        />
+        <DiagnosticsSidebar 
+          history={history} 
+          poolSize={poolSize} 
+          topCandidates={topCandidates}
+        />
+      </div>
       
       <div className="flex-1 flex flex-col relative h-full">
         {isCompleted ? (

@@ -5,17 +5,14 @@
 @tailwind utilities;
 
 :root {
-  --bg: #000000;
-  --surface: #0a0a0a;
-  --elevated: #111111;
-  --border: #1f1f1f;
-  --cyan: #00ffff;
-  --magenta: #ff006e;
-  --green: #00ff88;
-  --yellow: #ffdd00;
-  --orange: #ff8800;
-  --text-primary: #e0e0e0;
-  --text-dim: #666666;
+  --bg: #0A0A0A;
+  --surface: #111111;
+  --elevated: #1A1A1A;
+  --border: rgba(196, 164, 132, 0.1);
+  --accent: #C4A484;
+  --accent-dim: rgba(196, 164, 132, 0.4);
+  --text-primary: #E0E0E0;
+  --text-dim: #888888;
 }
 
 * {
@@ -25,7 +22,7 @@
 }
 
 html, body {
-  background: #000000;
+  background: var(--bg);
   color: var(--text-primary);
   font-family: 'Inter', system-ui, sans-serif;
   overflow-x: hidden;
@@ -33,9 +30,10 @@ html, body {
 }
 
 body {
-  background-image:
-    radial-gradient(ellipse at 20% 50%, rgba(0, 255, 255, 0.03) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(255, 0, 110, 0.03) 0%, transparent 60%);
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(196, 164, 132, 0.05), transparent 80%),
+    linear-gradient(to bottom, transparent, rgba(0,0,0,0.8)),
+    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h1v1H0V0zm39 39h1v1h-1v-1zM0 39h1v1H0v-1zM39 0h1v1h-1V0z' fill='%23C4A484' fill-opacity='0.05'/%3E%3C/svg%3E");
 }
 
 /* Scrollbar */

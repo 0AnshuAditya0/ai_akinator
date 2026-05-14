@@ -1,11 +1,11 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'IPL AI Akinator — AI Player Guessing Engine',
+  title: 'Ai Akinator Cricket',
   description: 'Think of any IPL player. Our AI will guess who it is within 12 questions.',
   keywords: 'IPL, cricket, akinator, AI, guessing game, DeepSeek',
   openGraph: {
-    title: 'IPL AI Akinator — AI Player Guessing Engine',
+    title: 'Ai Akinator Cricket',
     description: 'Think of any IPL player. Our AI will guess who it is within 12 questions.',
     type: 'website',
   },

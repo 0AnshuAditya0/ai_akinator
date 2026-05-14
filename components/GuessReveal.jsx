@@ -21,7 +21,7 @@ export default function GuessReveal({ isOpen, player, onFeedback }) {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-purple-500/10 pointer-events-none" />
 
             <div className="text-center space-y-10 relative z-10">
-              <div className="font-mono text-[#00FFFF] text-[10px] tracking-[0.5em] uppercase font-bold opacity-80">
+              <div className="font-mono text-[#C4A484] text-[10px] tracking-[0.5em] uppercase font-bold opacity-80">
                 Identity Correlation Confirmed
               </div>
               
@@ -37,7 +37,7 @@ export default function GuessReveal({ isOpen, player, onFeedback }) {
               </div>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-3 gap-6 py-8 border-y border-white/5 bg-white/5 rounded-2xl">
+              <div className="grid grid-cols-3 gap-6 py-8 border-y border-white/5 bg-white/[0.02] rounded-2xl">
                 <div>
                   <div className="text-white text-3xl font-serif italic">{player.matches || '-'}</div>
                   <div className="text-white/30 text-[8px] font-bold tracking-widest uppercase mt-1">Matches</div>

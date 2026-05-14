@@ -24,7 +24,7 @@ export default function VibrantPitchStage({ question, questionCount, onAnswer, i
 
   return (
     <div className="flex-1 h-full relative overflow-hidden flex flex-col items-center justify-center p-6 lg:p-12 pb-32">
-      {/* Loading Overlay with 30s Timer */}
+      {/* Loading Overlay */}
       <AnimatePresence>
         {isThinking && (
           <motion.div 
@@ -37,33 +37,17 @@ export default function VibrantPitchStage({ question, questionCount, onAnswer, i
                 <motion.div 
                   animate={{ rotate: 360 }}
                   transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-                  className="w-24 h-24 rounded-full border-2 border-t-[#00FFFF] border-white/5"
+                  className="w-24 h-24 rounded-full border-2 border-t-[#C4A484] border-white/5"
                 />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-mono text-[#00FFFF] font-bold">
-                  {timer}s
-                </div>
             </div>
             
             <div className="text-center space-y-3">
                 <div className="flex items-center justify-center space-x-3">
-                   <Loader2 className="w-4 h-4 text-[#00FFFF] animate-spin" />
-                   <div className="text-[#00FFFF] font-mono text-xs tracking-[0.6em] uppercase font-bold animate-pulse">
+                   <Loader2 className="w-4 h-4 text-[#C4A484] animate-spin" />
+                   <div className="text-[#C4A484] font-mono text-xs tracking-[0.6em] uppercase font-bold animate-pulse">
                      Synthesizing Neural Path
                    </div>
                 </div>
-                <div className="text-white/30 font-mono text-[9px] uppercase tracking-[0.2em] max-w-xs leading-relaxed">
-                  The engine is cross-referencing {91 - questionCount} candidates. <br/>
-                  Estimated completion: {timer > 15 ? 'OPTIONAL' : 'IMMINENT'}
-                </div>
-            </div>
-
-            {/* Micro-progress bar for the timer */}
-            <div className="w-48 h-1 bg-white/5 rounded-full overflow-hidden">
-                <motion.div 
-                  initial={{ width: "100%" }}
-                  animate={{ width: `${(timer / 30) * 100}%` }}
-                  className="h-full bg-[#00FFFF]/40"
-                />
             </div>
           </motion.div>
         )}
@@ -82,10 +66,10 @@ export default function VibrantPitchStage({ question, questionCount, onAnswer, i
         <motion.div 
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="bg-[#C4A484] px-6 py-1 rounded-full mb-10 shadow-lg"
+          className="px-6 py-2 border border-white/5 bg-white/[0.02] backdrop-blur-md rounded-full mb-10 shadow-lg"
         >
-          <span className="text-[9px] font-bold text-white uppercase tracking-[0.25em]">
-            Question {questionCount + 1} of 20
+          <span className="text-[10px] font-mono text-[#C4A484]/70 uppercase tracking-[0.25em]">
+            QUESTION <span className="text-[#C4A484] font-bold italic">{String(questionCount + 1).padStart(2, '0')}</span> <span className="opacity-30">/</span> <span className="opacity-30">20</span>
           </span>
         </motion.div>
 
@@ -94,36 +78,38 @@ export default function VibrantPitchStage({ question, questionCount, onAnswer, i
           key={question}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-7xl font-serif text-white text-center leading-[1.1] mb-16 drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)] max-w-4xl"
+          className="text-4xl md:text-7xl font-serif text-[#E0E0E0] text-center leading-[1.1] mb-16 drop-shadow-2xl max-w-4xl italic font-medium"
         >
           {question.replace(/\*\*/g, '')}
         </motion.h1>
 
         {/* Glassmorphism Buttons */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl mb-24">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full max-w-6xl mb-24 px-4">
           <GlassButton 
             label="YES" 
             icon={<Check className="w-5 h-5 text-white" />} 
-            iconColor="bg-blue-500/80"
+            iconColor="bg-blue-500/40"
             onClick={() => onAnswer('Yes')} 
             disabled={isThinking}
           />
           <GlassButton 
             label="NO" 
             icon={<X className="w-5 h-5 text-white" />} 
-            iconColor="bg-red-500/80"
+            iconColor="bg-red-500/40"
             onClick={() => onAnswer('No')} 
             disabled={isThinking}
           />
           <GlassButton 
             label="PROBABLY" 
-            icon={<HelpCircle className="w-5 h-5 text-[#C4A484]" />} 
+            icon={<HelpCircle className="w-5 h-5 text-white/80" />} 
+            iconColor="bg-white/5"
             onClick={() => onAnswer('Maybe')} 
             disabled={isThinking}
           />
           <GlassButton 
             label="UNKNOWN" 
-            icon={<Info className="w-5 h-5 text-white/60" />} 
+            icon={<div className="w-5 h-0.5 bg-white/60" />} 
+            iconColor="bg-white/5"
             onClick={() => onAnswer('Unknown')} 
             disabled={isThinking}
           />
@@ -135,31 +121,26 @@ export default function VibrantPitchStage({ question, questionCount, onAnswer, i
         <motion.div 
           initial={{ y: 100 }}
           animate={{ y: 0 }}
-          className="w-full bg-white/[0.03] backdrop-blur-3xl border-t border-white/10 p-8 pt-6 pb-10 shadow-[0_-20px_60px_rgba(0,0,0,0.4)] pointer-events-auto"
+          className="w-full bg-white/[0.01] backdrop-blur-3xl border-t border-white/5 p-8 pt-6 pb-10 shadow-2xl pointer-events-auto"
         >
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="flex justify-between items-center mb-4">
-              <div className="flex items-center space-x-4">
-                <div className="w-2.5 h-2.5 rounded-full bg-[#00FFFF] shadow-[0_0_10px_#00FFFF] animate-pulse" />
-                <span className="text-xs font-black text-white/70 uppercase tracking-[0.4em]">Strategy Integrity</span>
+              <div className="flex items-center space-x-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-[#C4A484] animate-pulse" />
+                <span className="text-[10px] font-mono text-[#C4A484]/40 uppercase tracking-[0.4em]">PREDICTION</span>
               </div>
-              <span className="text-xs font-mono text-[#00FFFF] tracking-widest font-bold">
-                {syncProgress.toFixed(0)}% SYNCHRONIZED
+              <span className="text-[10px] font-mono text-[#C4A484] tracking-widest font-bold">
+                {syncProgress.toFixed(0)}% ACCURACY
               </span>
             </div>
             
-            <div className="h-1.5 bg-white/5 rounded-full overflow-hidden border border-white/5 shadow-inner">
+            <div className="h-0.5 bg-white/5 rounded-full overflow-hidden">
               <motion.div 
-                className="h-full bg-gradient-to-r from-blue-600 via-[#00FFFF] to-blue-500"
+                className="h-full bg-[#C4A484]"
                 initial={{ width: 0 }}
                 animate={{ width: `${syncProgress}%` }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
               />
-            </div>
-
-            <div className="mt-4 flex justify-between items-center opacity-30 text-[9px] font-mono tracking-[0.6em] text-white uppercase">
-              <span>Sector Analysis: ACTIVE</span>
-              <span>Neural Pathing: SECURE</span>
             </div>
           </div>
         </motion.div>
@@ -175,12 +156,12 @@ function GlassButton({ label, icon, iconColor, onClick, disabled }) {
       whileTap={{ scale: 0.98 }}
       onClick={onClick}
       disabled={disabled}
-      className="relative flex flex-col items-center justify-center space-y-4 h-40 bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-3xl transition-all shadow-xl group disabled:opacity-50 disabled:cursor-not-allowed"
+      className="relative flex flex-col items-center justify-center space-y-2 md:space-y-4 h-28 md:h-40 bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-2xl md:rounded-3xl transition-all shadow-xl group disabled:opacity-50 disabled:cursor-not-allowed"
     >
-      <div className={`w-12 h-12 rounded-full flex items-center justify-center border border-white/20 transition-transform group-hover:scale-110 ${iconColor || 'bg-white/5'}`}>
+      <div className={`w-8 h-8 md:w-12 md:h-12 rounded-full flex items-center justify-center border border-white/20 transition-transform group-hover:scale-110 ${iconColor || 'bg-white/5'}`}>
         {icon}
       </div>
-      <div className="text-[12px] font-bold text-white/70 tracking-[0.4em] uppercase group-hover:text-white transition-colors">{label}</div>
+      <div className="text-[10px] md:text-[12px] font-bold text-white/70 tracking-[0.2em] md:tracking-[0.4em] uppercase group-hover:text-white transition-colors">{label}</div>
     </motion.button>
   );
 }
